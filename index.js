@@ -23,14 +23,14 @@ function destructivelyDeleteFromEmployeeByKey(employee, key) {
 }
 
 const updatedEmployee = updateEmployeeWithKeyAndValue(employee, "city", "New York");
-console.log(updatedEmployee); // { name: "John Doe", streetAddress: "123 Main St", city: "New York" }
+console.log(updatedEmployee); 
 
 const mutatedEmployee = destructivelyUpdateEmployeeWithKeyAndValue(employee, "city", "Los Angeles");
-console.log(mutatedEmployee); // { name: "John Doe", streetAddress: "123 Main St", city: "Los Angeles" }
+console.log(mutatedEmployee); 
 
 const employeeWithoutCity = deleteFromEmployeeByKey(mutatedEmployee, "city");
-console.log(employeeWithoutCity); // { name: "John Doe", streetAddress: "123 Main St" }
+console.log(employeeWithoutCity); 
 
 const finalEmployee = destructivelyDeleteFromEmployeeByKey(mutatedEmployee, "streetAddress");
-console.log(finalEmployee); // { name: "John Doe", city: "Los Angeles" }
+console.log(finalEmployee); 
 
